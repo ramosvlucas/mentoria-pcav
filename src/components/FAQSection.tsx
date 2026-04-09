@@ -7,12 +7,12 @@ import {
 
 const faqs = [
   {
-    q: "Para quem é a Mentoria PCAV?",
-    a: "Para vendedores do Mercado Livre que já vendem mas estão travados. Se você quer parar de vender no escuro e aprender a tomar decisões com base em dados reais, é pra você.",
+    q: "Quanto custa e como funciona o pagamento?",
+    a: "O investimento é R$ 8.497 pela mentoria completa de 6 meses. As condições de pagamento são discutidas diretamente no processo de aplicação — clica no botão e a gente conversa.",
   },
   {
-    q: "Preciso ter experiência no Mercado Livre?",
-    a: "Sim, a mentoria é para quem já vende. Se você ainda não começou, a PCAV não é pra você nesse momento.",
+    q: "E se eu já tentei outros cursos e não funcionou?",
+    a: "Faz parte. A maioria dos alunos chegou aqui depois de gastar com curso ou consultoria que entregou teoria sem aplicação prática. A diferença aqui é que você não recebe conteúdo — você aprende a analisar o seu negócio, na prática, do seu produto, no seu mercado.",
   },
   {
     q: "Em quanto tempo vejo resultados?",

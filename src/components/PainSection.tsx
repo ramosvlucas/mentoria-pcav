@@ -19,11 +19,11 @@ const PainSection = () => {
         <p className="text-lg font-semibold text-foreground mb-2">
           E não, a culpa não é do algoritmo.
         </p>
-        <p className="border-l-4 border-primary pl-5 py-1 mb-6 text-xl font-bold text-foreground">
+        <p className="text-xl font-bold text-foreground mb-8 leading-snug">
           O problema é que você não sabe analisar dados.
         </p>
 
-        <p className="border-l-2 border-primary pl-6 py-2 my-6 text-foreground font-medium italic text-lg">
+        <p className="border-l-2 border-primary pl-6 py-2 mt-10 mb-6 text-foreground font-medium italic text-lg">
           Tomar qualquer decisão no Mercado Livre sem ler dados é como entrar em um labirinto sem mapa.
         </p>
 

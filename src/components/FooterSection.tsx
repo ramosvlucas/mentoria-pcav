@@ -12,6 +12,16 @@ const FooterSection = () => {
         <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Mentoria PCAV. Lucas Vilaronga. Todos os direitos reservados.
         </p>
+        <p className="text-sm text-muted-foreground mt-2">
+          <a
+            href="https://instagram.com/olucasvilaronga"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary/60 hover:text-primary transition-colors"
+          >
+            @olucasvilaronga
+          </a>
+        </p>
       </div>
     </footer>
   );

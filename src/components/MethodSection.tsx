@@ -34,7 +34,7 @@ const steps = [
 const MethodSection = () => {
   return (
     <section className="py-16 md:py-24 px-6 bg-secondary/30">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         <div className="mb-16">
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight">
             O que você vai{" "}
@@ -51,20 +51,18 @@ const MethodSection = () => {
           {steps.map((step, i) => (
             <div
               key={i}
-              className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card group hover:border-primary/30 transition-all duration-300 flex flex-col md:flex-row items-start gap-6"
+              className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card group hover:border-primary/30 transition-all duration-300 flex flex-col gap-4"
             >
-              <div className="flex items-center gap-4 shrink-0">
-                <span className="text-5xl md:text-6xl font-heading font-bold text-gradient-gold opacity-30">
+              <div className="flex items-center gap-4">
+                <span className="text-5xl md:text-6xl font-heading font-bold text-gradient-gold opacity-50">
                   {step.number}
                 </span>
-              </div>
-              <div className="flex-1">
-                <div className="flex items-center gap-3 mb-3">
+                <div className="flex items-center gap-3">
                   <step.icon className="w-6 h-6 text-primary" />
                   <h3 className="font-heading font-bold text-xl md:text-2xl">{step.title}</h3>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">{step.description}</p>
               </div>
+              <p className="text-muted-foreground leading-relaxed">{step.description}</p>
             </div>
           ))}
         </div>

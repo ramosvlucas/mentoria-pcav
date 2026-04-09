@@ -1,3 +1,8 @@
+// TODO: substituir os arquivos abaixo pelas imagens reais antes do deploy
+import wppGiselle from "@/assets/whatsapp-giselle.jpg";
+import wppGuilherme from "@/assets/whatsapp-guilherme.jpg";
+import wppEder from "@/assets/whatsapp-eder.jpg";
+
 const StorySection = () => {
   return (
     <section className="py-16 md:py-24 px-6">
@@ -40,6 +45,12 @@ const StorySection = () => {
                 Se livrou da CLT. Hoje tem liberdade, mais qualidade de vida e tempo pra desenvolver o próprio negócio.
               </p>
               <p className="mt-4 font-medium text-foreground">Estratégia, direção e ação. Foi isso que mudou tudo.</p>
+              <img
+                src={wppGiselle}
+                alt="Conversa no WhatsApp com a Giselle"
+                className="w-full rounded-xl mt-6 border border-border/30"
+                loading="lazy"
+              />
             </div>
           </div>
 
@@ -74,6 +85,37 @@ const StorySection = () => {
               <p>
                 E foi aí que ele percebeu, na prática, o que eu sempre digo: <span className="text-foreground font-medium">80% do resultado vem da pesquisa e 20% da ação.</span>
               </p>
+              <img
+                src={wppGuilherme}
+                alt="Conversa no WhatsApp com o Guilherme"
+                className="w-full rounded-xl mt-6 border border-border/30"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Éder */}
+          <div className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="bg-gradient-gold text-primary-foreground text-xs font-heading font-bold px-3 py-1 rounded-full">
+                Medalha Platinum
+              </span>
+              <span className="text-foreground font-heading font-bold">Éder</span>
+            </div>
+            <div className="space-y-5 text-muted-foreground leading-relaxed">
+              <p>
+                O Éder acordou um dia, entrou no WhatsApp e mandou uma mensagem simples.
+                Sem enrolação. Sem rodeio.
+              </p>
+              <p className="mt-4 font-semibold text-foreground">
+                Platinum batido. Meta agora: 300k por mês.
+              </p>
+              <img
+                src={wppEder}
+                alt="Conversa no WhatsApp com o Éder"
+                className="w-full rounded-xl mt-4 border border-border/30"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
