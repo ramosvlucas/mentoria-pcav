@@ -33,6 +33,5 @@ jobs:
           port: 21
           local-dir: ./dist/
           server-dir: /domains/olucasvilaronga.com.br/public_html/
-          dangerous-clean-slate: true
           log-level: verbose
           security: loose
