@@ -1,7 +1,7 @@
 import wppGiselle from "@/assets/whatsapp-giselle.jpg";
 import wppGuilherme from "@/assets/whatsapp-guilherme.jpg";
 import wppPatrick from "@/assets/whatsapp-patrick.png";
-import wppLuciano from "@/assets/whatsapp-luciano.jpg";
+import wppLuciano from "@/assets/whatsapp-luciano.png";
 import wppLeonardo from "@/assets/whatsapp-leonardo.png";
 import wppEder from "@/assets/whatsapp-eder.jpg";
 
