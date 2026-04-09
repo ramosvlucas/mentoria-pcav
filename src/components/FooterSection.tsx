@@ -15,7 +15,7 @@ const FooterSection = () => {
         </p>
         <div className="flex items-center justify-center gap-5 mt-3">
           <a
-            href="https://instagram.com/olucasvilaronga"
+            href="https://www.instagram.com/olucasvilaronga/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm text-primary/60 hover:text-primary transition-colors"
@@ -24,7 +24,7 @@ const FooterSection = () => {
             @olucasvilaronga
           </a>
           <a
-            href="https://youtube.com/@olucasvilaronga"
+            href="https://www.youtube.com/@olucasvilaronga"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm text-primary/60 hover:text-primary transition-colors"
