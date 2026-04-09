@@ -1,4 +1,5 @@
 import Autoplay from "embla-carousel-autoplay";
+import AutoHeight from "embla-carousel-auto-height";
 import { useRef } from "react";
 import {
   Carousel,
@@ -91,6 +92,7 @@ const stories = [
 
 const StorySection = () => {
   const plugin = useRef(Autoplay({ delay: 5000, stopOnInteraction: true }));
+  const autoHeight = useRef(AutoHeight());
 
   return (
     <section className="py-16 md:py-24 px-6">
@@ -102,7 +104,7 @@ const StorySection = () => {
         </div>
 
         <Carousel
-          plugins={[plugin.current]}
+          plugins={[plugin.current, autoHeight.current]}
           opts={{ loop: true, align: "start" }}
           className="w-full"
         >

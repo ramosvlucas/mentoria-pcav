@@ -173,3 +173,9 @@
   border-radius: 12px;
   box-shadow: 0 0 60px hsl(0 0% 0% / 0.5);
 }
+
+/* Embla AutoHeight transition */
+.embla__container {
+  align-items: flex-start;
+  transition: height 0.3s ease;
+}
