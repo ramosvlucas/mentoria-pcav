@@ -1,4 +1,3 @@
-// TODO: substituir os arquivos abaixo pelas imagens reais antes do deploy
 import wppGiselle from "@/assets/whatsapp-giselle.jpg";
 import wppGuilherme from "@/assets/whatsapp-guilherme.jpg";
 import wppEder from "@/assets/whatsapp-eder.jpg";
@@ -31,26 +30,17 @@ const StorySection = () => {
                 Na primeira conversa ficou claro: ela <span className="text-foreground font-medium">não fazia pesquisa de mercado</span> e muito menos sabia que existiam dados a serem analisados.
               </p>
               <p>
-                Depois de algumas semanas, ela me chama no WhatsApp e solta:
+                Depois de algumas semanas, ela me chamou no WhatsApp.
               </p>
-
-              <blockquote className="border-l-2 border-primary pl-6 py-2 text-foreground italic text-lg font-medium">
-                "Hello! Adivinha quem tomou vergonha na cara pra pesquisar?"
-              </blockquote>
-
-              <p>
-                Ela descobriu quem dominava o mercado, reposicionou o preço e as vendas voltaram.
-              </p>
+              <img
+                src={wppGiselle}
+                alt="Mensagem da Giselle no WhatsApp"
+                className="w-full rounded-xl mt-2 border border-border/30"
+                loading="lazy"
+              />
               <p className="text-foreground font-medium">
                 Se livrou da CLT. Hoje tem liberdade, mais qualidade de vida e tempo pra desenvolver o próprio negócio.
               </p>
-              <p className="mt-4 font-medium text-foreground">Estratégia, direção e ação. Foi isso que mudou tudo.</p>
-              <img
-                src={wppGiselle}
-                alt="Conversa no WhatsApp com a Giselle"
-                className="w-full rounded-xl mt-6 border border-border/30"
-                loading="lazy"
-              />
             </div>
           </div>
 
@@ -70,27 +60,19 @@ const StorySection = () => {
               <p>
                 Foi lá e gastou dinheiro em cursos e consultorias que não deram resultado nenhum. Não sabia o básico sobre o próprio negócio. Não fazia pesquisa, não conhecia os concorrentes, não sabia a margem real de cada produto.
               </p>
-              <p className="mt-6 mb-6 font-semibold text-foreground">
+              <p className="font-semibold text-foreground">
                 Só maluco terceiriza o próprio negócio sem ter domínio do que deve ser feito. E o pior: sendo orientado por quem nem vende.
               </p>
-              <p>Foi só quando começou a aplicar o método que a ficha caiu:</p>
-
-              <blockquote className="border-l-2 border-primary pl-6 py-2 text-foreground italic text-lg font-medium">
-                "Agora entendi por que eu nunca conseguia sair do lugar. Me diziam A, mas era B. Como eu não conhecia o B, achava que era o A. Estava tudo errado, cara, e gastei 15 mil na consultoria anual!"
-              </blockquote>
-
+              <p>Foi só quando começou a aplicar o método que a ficha caiu.</p>
+              <img
+                src={wppGuilherme}
+                alt="Mensagem do Guilherme no WhatsApp"
+                className="w-full rounded-xl mt-2 border border-border/30"
+                loading="lazy"
+              />
               <p className="text-foreground font-medium">
                 Em menos de 10 meses, saiu do zero e conquistou a medalha Platinum.
               </p>
-              <p>
-                E foi aí que ele percebeu, na prática, o que eu sempre digo: <span className="text-foreground font-medium">80% do resultado vem da pesquisa e 20% da ação.</span>
-              </p>
-              <img
-                src={wppGuilherme}
-                alt="Conversa no WhatsApp com o Guilherme"
-                className="w-full rounded-xl mt-6 border border-border/30"
-                loading="lazy"
-              />
             </div>
           </div>
 
@@ -107,13 +89,10 @@ const StorySection = () => {
                 O Éder acordou um dia, entrou no WhatsApp e mandou uma mensagem simples.
                 Sem enrolação. Sem rodeio.
               </p>
-              <p className="mt-4 font-semibold text-foreground">
-                Platinum batido. Meta agora: 300k por mês.
-              </p>
               <img
                 src={wppEder}
-                alt="Conversa no WhatsApp com o Éder"
-                className="w-full rounded-xl mt-4 border border-border/30"
+                alt="Mensagem do Éder no WhatsApp"
+                className="w-full rounded-xl mt-2 border border-border/30"
                 loading="lazy"
               />
             </div>
