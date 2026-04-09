@@ -120,13 +120,8 @@ const StorySection = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="flex items-center justify-center gap-4 mt-6">
-            <CarouselPrevious className="static translate-y-0" />
-            <span className="text-xs text-muted-foreground/50">
-              {stories.length} depoimentos
-            </span>
-            <CarouselNext className="static translate-y-0" />
-          </div>
+          <CarouselPrevious />
+          <CarouselNext />
         </Carousel>
       </div>
     </section>
