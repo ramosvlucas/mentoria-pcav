@@ -1,7 +1,7 @@
 import wppGiselle from "@/assets/whatsapp-giselle.jpg";
 import wppGuilherme from "@/assets/whatsapp-guilherme.jpg";
-import wppPatrick from "@/assets/whatsapp-patrick.png";
-import wppLuciano from "@/assets/whatsapp-luciano.jpg";
+import wppPatrick from "@/assets/whatsapp-luciano.jpg";
+import wppLuciano from "@/assets/whatsapp-patrick.png";
 import wppEder from "@/assets/whatsapp-eder.jpg";
 
 const StorySection = () => {
@@ -47,7 +47,7 @@ const StorySection = () => {
           <div className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card">
             <div className="flex items-center gap-3 mb-6">
               <span className="bg-gradient-gold text-primary-foreground text-xs font-heading font-bold px-3 py-1 rounded-full">
-                Medalha Platinum
+                Livre das consultorias
               </span>
               <span className="text-foreground font-heading font-bold">Guilherme</span>
             </div>
