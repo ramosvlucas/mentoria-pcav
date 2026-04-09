@@ -2,6 +2,7 @@ import wppGiselle from "@/assets/whatsapp-giselle.jpg";
 import wppGuilherme from "@/assets/whatsapp-guilherme.jpg";
 import wppPatrick from "@/assets/whatsapp-patrick.png";
 import wppLuciano from "@/assets/whatsapp-luciano.jpg";
+import wppLeonardo from "@/assets/whatsapp-leonardo.png";
 import wppEder from "@/assets/whatsapp-eder.jpg";
 
 const StorySection = () => {
@@ -111,6 +112,24 @@ const StorySection = () => {
                 src={wppLuciano}
                 alt="Depoimento do Luciano no WhatsApp"
                 className="w-full rounded-xl mt-2 border border-border/30"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Leonardo */}
+          <div className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="bg-gradient-gold text-primary-foreground text-xs font-heading font-bold px-3 py-1 rounded-full">
+                Aluno PCAV
+              </span>
+              <span className="text-foreground font-heading font-bold">Leonardo</span>
+            </div>
+            <div className="space-y-5 text-muted-foreground leading-relaxed">
+              <img
+                src={wppLeonardo}
+                alt="Depoimento do Leonardo no WhatsApp"
+                className="w-full rounded-xl border border-border/30"
                 loading="lazy"
               />
             </div>
