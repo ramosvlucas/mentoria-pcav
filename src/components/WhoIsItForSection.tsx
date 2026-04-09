@@ -1,4 +1,4 @@
-import { X } from "lucide-react";
+import { X, Check } from "lucide-react";
 
 const WhoIsItForSection = () => {
   return (
@@ -32,16 +32,18 @@ const WhoIsItForSection = () => {
         {/* IS for */}
         <div className="bg-gradient-card border border-primary/20 rounded-2xl p-8 shadow-card shadow-gold">
           <h3 className="font-heading font-bold text-lg mb-6 text-gradient-gold">Essa página foi feita pra você se...</h3>
-          <div className="space-y-4 text-muted-foreground leading-relaxed">
-            <p>
-              Você já vende, mas sente que está travado. O faturamento oscila, o medo e a incerteza tomam conta, o lucro some e a operação anda a deus dará.
-            </p>
-            <p>
-              Você cansou de contar com a sorte, de depender de consultoria e de decidir tudo no achismo.
-            </p>
-            <p className="text-foreground font-medium">
-              Quer clareza, segurança e previsibilidade pra tomar decisão com base em dados de verdade.
-            </p>
+          <div className="space-y-4">
+            {[
+              "Você já vende, mas sente que está travado e o faturamento oscila sem explicação.",
+              "O medo e a incerteza tomam conta e o lucro some sem você entender o porquê.",
+              "Cansou de depender de consultoria e de decidir tudo no achismo.",
+              "Quer clareza, segurança e previsibilidade pra tomar decisão com base em dados de verdade.",
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-3">
+                <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <p className="text-muted-foreground">{item}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
