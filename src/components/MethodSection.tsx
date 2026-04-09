@@ -55,7 +55,7 @@ const MethodSection = () => {
             >
               <div className="flex items-center gap-4">
                 <span className="text-5xl md:text-6xl font-heading font-bold text-gradient-gold opacity-50">
-                  {step.number}
+                  {step.letter}
                 </span>
                 <div className="flex items-center gap-3">
                   <step.icon className="w-6 h-6 text-primary" />
