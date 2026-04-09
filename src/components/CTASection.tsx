@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
   return (
-    <section className="py-16 md:py-24 px-6 relative overflow-hidden">
+    <section className="py-20 md:py-28 px-6 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-dark" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_hsl(45_100%_51%_/_0.08)_0%,_transparent_60%)]" />
 

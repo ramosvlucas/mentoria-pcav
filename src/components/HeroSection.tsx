@@ -2,7 +2,7 @@ import logoPcav from "@/assets/logo-pcav.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative flex items-center justify-center overflow-hidden px-6 pt-20 pb-16">
+    <section className="relative flex items-center justify-center overflow-hidden px-6 pt-20 pb-20 md:pt-28 md:pb-28">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-dark" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(45_100%_51%_/_0.06)_0%,_transparent_60%)]" />

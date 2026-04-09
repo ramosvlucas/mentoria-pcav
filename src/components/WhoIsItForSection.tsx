@@ -2,7 +2,7 @@ import { X, Check } from "lucide-react";
 
 const WhoIsItForSection = () => {
   return (
-    <section className="py-16 md:py-24 px-6">
+    <section className="py-20 md:py-28 px-6">
       <div className="max-w-3xl mx-auto">
         <div className="mb-12">
           <p className="text-muted-foreground text-lg mb-4">Antes de qualquer coisa, deixa eu ser bem claro...</p>

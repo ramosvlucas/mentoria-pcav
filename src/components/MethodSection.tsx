@@ -33,9 +33,9 @@ const steps = [
 
 const MethodSection = () => {
   return (
-    <section className="py-16 md:py-24 px-6 bg-secondary/30">
+    <section className="py-24 md:py-32 px-6 bg-secondary/30">
       <div className="max-w-3xl mx-auto">
-        <div className="mb-16">
+        <div className="mb-12">
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight">
             O que você vai{" "}
             <span className="line-through text-muted-foreground decoration-muted-foreground/50">aprender</span>{" "}

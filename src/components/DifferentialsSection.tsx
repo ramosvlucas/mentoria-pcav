@@ -2,9 +2,9 @@ import { X, Check } from "lucide-react";
 
 const DifferentialsSection = () => {
   return (
-    <section className="py-16 md:py-24 px-6">
+    <section className="py-20 md:py-28 px-6">
       <div className="max-w-3xl mx-auto">
-        <div className="mb-16">
+        <div className="mb-12">
           <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight">
             Isso aqui <span className="text-gradient-gold">não é</span> mais um curso
           </h2>

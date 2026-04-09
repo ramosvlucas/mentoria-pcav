@@ -2,10 +2,10 @@ import { X } from "lucide-react";
 
 const PainSection = () => {
   return (
-    <section className="py-16 md:py-24 px-6">
+    <section className="py-20 md:py-28 px-6">
       <div className="max-w-3xl mx-auto">
 
-        <h2 className="text-3xl md:text-5xl font-heading font-bold mb-8 leading-tight">
+        <h2 className="text-3xl md:text-5xl font-heading font-bold mb-12 leading-tight">
           Você já abriu o resultado do dia e ficou com a sensação de estar{" "}
           <span className="text-gradient-gold">trabalhando à toa?</span>
         </h2>
