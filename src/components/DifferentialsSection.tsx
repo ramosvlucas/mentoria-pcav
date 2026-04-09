@@ -1,3 +1,5 @@
+import { X, Check } from "lucide-react";
+
 const DifferentialsSection = () => {
   return (
     <section className="py-16 md:py-24 px-6">
@@ -35,11 +37,11 @@ const DifferentialsSection = () => {
           ].map(([sem, com], i, arr) => (
             <div key={i} className={`grid grid-cols-2 ${i < arr.length - 1 ? "border-b border-border" : ""}`}>
               <div className="p-4 border-r border-border flex items-start gap-2">
-                <span className="text-destructive text-lg leading-none mt-0.5">×</span>
+                <X className="w-4 h-4 text-destructive shrink-0 mt-0.5" />
                 <p className="text-sm text-muted-foreground leading-relaxed">{sem}</p>
               </div>
               <div className="p-4 flex items-start gap-2">
-                <span className="text-primary text-lg leading-none mt-0.5">✓</span>
+                <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                 <p className="text-sm text-foreground leading-relaxed">{com}</p>
               </div>
             </div>
