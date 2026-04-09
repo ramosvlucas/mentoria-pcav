@@ -1,4 +1,4 @@
-import { Search, Package, Monitor, HandCoins, Megaphone } from "lucide-react";
+import { Search, Package, Monitor, Banknote } from "lucide-react";
 
 const steps = [
   {
@@ -23,7 +23,7 @@ const steps = [
     description: "Monte anúncios que convertem. Posicione seu produto com estratégia, preço e copy que fazem diferença.",
   },
   {
-    icon: HandCoins,
+    icon: Banknote,
     number: "04",
     letter: "V",
     title: "Venda",
