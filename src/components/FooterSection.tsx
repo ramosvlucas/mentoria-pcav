@@ -25,7 +25,7 @@ const FooterSection = () => {
           </a>
         </div>
         <p className="text-xs text-muted-foreground/50">
-          © {new Date().getFullYear()} Lucas Vilaronga. Mentoria PCAV.
+          Lucas Vilaronga © {new Date().getFullYear()}
         </p>
       </div>
     </footer>
