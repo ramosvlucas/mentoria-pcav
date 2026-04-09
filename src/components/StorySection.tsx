@@ -1,6 +1,7 @@
 import wppGiselle from "@/assets/whatsapp-giselle.jpg";
 import wppGuilherme from "@/assets/whatsapp-guilherme.jpg";
-import wppLuciano from "@/assets/whatsapp-patrick.png";
+import wppPatrick from "@/assets/whatsapp-patrick.png";
+import wppLuciano from "@/assets/whatsapp-luciano.jpg";
 import wppEder from "@/assets/whatsapp-eder.jpg";
 
 const StorySection = () => {
@@ -81,22 +82,13 @@ const StorySection = () => {
               </span>
               <span className="text-foreground font-heading font-bold">Patrick</span>
             </div>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                "Antes de entrar na mentoria, eu não tinha clareza de fato qual era o tamanho do mercado de cada produto que eu estava, tanto quanto qual era a % de marketshare que eu estava tomando daquele produto.
-              </p>
-              <p>
-                Não entendia de fato como posicionar meu anúncio e quais eram os gargalos a serem solucionados para um anúncio vender constante e com previsibilidade.
-              </p>
-              <p>
-                A pesquisa de mercado foi o divisor de águas.
-              </p>
-              <p className="text-foreground font-medium">
-                Meu maior resultado até hoje foi a constância de faturamento com margens saudáveis sem a necessidade de escalar com mais produtos, mas sim liderar o marketshare dos produtos que já tenho.
-              </p>
-              <p>
-                Eu diria pra quem tem dúvida se entra na mentoria: é se de fato quer tratar seu negócio como um negócio de longo prazo ou um pinga pinga eterno, sem ver claramente o que está fazendo dentro do marketplace."
-              </p>
+            <div className="space-y-5 text-muted-foreground leading-relaxed">
+              <img
+                src={wppPatrick}
+                alt="Depoimento do Patrick no WhatsApp"
+                className="w-full rounded-xl border border-border/30"
+                loading="lazy"
+              />
             </div>
           </div>
 
