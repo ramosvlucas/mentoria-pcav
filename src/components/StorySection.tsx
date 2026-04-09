@@ -1,6 +1,6 @@
 import wppGiselle from "@/assets/whatsapp-giselle.jpg";
-import wppGuilherme from "@/assets/whatsapp-guilherme.jpg";
 import wppPatrick from "@/assets/whatsapp-patrick.png";
+import wppGuilherme from "@/assets/whatsapp-guilherme.jpg";
 import wppLuciano from "@/assets/whatsapp-luciano.png";
 import wppLeonardo from "@/assets/whatsapp-leonardo.png";
 import wppEder from "@/assets/whatsapp-eder.jpg";
@@ -102,12 +102,6 @@ const StorySection = () => {
               <span className="text-foreground font-heading font-bold">Luciano</span>
             </div>
             <div className="space-y-5 text-muted-foreground leading-relaxed">
-              <p>
-                O Luciano chegou com 500 caixas paradas, prazo de pagamento chegando e uma situação que poderia destruir o negócio.
-              </p>
-              <p>
-                Tinha apostado alto num produto sazonal. O mercado mudou, a margem apertou, a concorrência derrubou os preços — e ele não tinha visto nada disso acontecer.
-              </p>
               <img
                 src={wppLuciano}
                 alt="Depoimento do Luciano no WhatsApp"
