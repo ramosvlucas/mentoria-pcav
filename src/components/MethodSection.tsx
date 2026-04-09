@@ -1,4 +1,4 @@
-import { Search, ShoppingCart, Megaphone, BadgeDollarSign } from "lucide-react";
+import { Search, Package, Monitor, HandCoins, Megaphone } from "lucide-react";
 
 const steps = [
   {
@@ -9,21 +9,21 @@ const steps = [
     description: "Descubra quem domina o mercado, entenda o cenário e identifique oportunidades reais antes de agir.",
   },
   {
-    icon: ShoppingCart,
+    icon: Package,
     number: "02",
     letter: "C",
     title: "Compre",
     description: "Compre com inteligência. Saiba exatamente o que comprar, quanto comprar e quando comprar com base em dados.",
   },
   {
-    icon: Megaphone,
+    icon: Monitor,
     number: "03",
     letter: "A",
     title: "Anuncie",
     description: "Monte anúncios que convertem. Posicione seu produto com estratégia, preço e copy que fazem diferença.",
   },
   {
-    icon: BadgeDollarSign,
+    icon: HandCoins,
     number: "04",
     letter: "V",
     title: "Venda",
