@@ -1,5 +1,7 @@
 import wppGiselle from "@/assets/whatsapp-giselle.jpg";
 import wppGuilherme from "@/assets/whatsapp-guilherme.jpg";
+import wppPatrick from "@/assets/whatsapp-patrick.png";
+import wppLuciano from "@/assets/whatsapp-luciano.jpg";
 import wppEder from "@/assets/whatsapp-eder.jpg";
 
 const StorySection = () => {
@@ -21,7 +23,6 @@ const StorySection = () => {
               </span>
               <span className="text-foreground font-heading font-bold">Giselle</span>
             </div>
-
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p>
                 A Giselle chegou na mentoria uns meses atrás. Ainda presa no CLT, ela tinha um produto bom, mas as vendas despencaram e ela não sabia o porquê.
@@ -29,9 +30,7 @@ const StorySection = () => {
               <p>
                 Na primeira conversa ficou claro: ela <span className="text-foreground font-medium">não fazia pesquisa de mercado</span> e muito menos sabia que existiam dados a serem analisados.
               </p>
-              <p>
-                Depois de algumas semanas, ela me chamou no WhatsApp.
-              </p>
+              <p>Depois de algumas semanas, ela me chamou no WhatsApp.</p>
               <img
                 src={wppGiselle}
                 alt="Mensagem da Giselle no WhatsApp"
@@ -52,7 +51,6 @@ const StorySection = () => {
               </span>
               <span className="text-foreground font-heading font-bold">Guilherme</span>
             </div>
-
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p>
                 O Guilherme também era CLT. Trabalhava o dia todo, chegava em casa cansado e, sem tempo nem direção, pensou o que a maioria pensa: <span className="text-foreground">"Vou pagar alguém pra fazer pra mim."</span>
@@ -73,6 +71,54 @@ const StorySection = () => {
               <p className="text-foreground font-medium">
                 Em menos de 10 meses, saiu do zero e conquistou a medalha Platinum.
               </p>
+            </div>
+          </div>
+
+          {/* Patrick */}
+          <div className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="bg-gradient-gold text-primary-foreground text-xs font-heading font-bold px-3 py-1 rounded-full">
+                R$ 204k · 27% de margem
+              </span>
+              <span className="text-foreground font-heading font-bold">Patrick</span>
+            </div>
+            <div className="space-y-5 text-muted-foreground leading-relaxed">
+              <p>
+                O Patrick já vendia. Mas não sabia o tamanho real do seu mercado, não entendia como posicionar o anúncio e tomava decisão sem ver os números de verdade.
+              </p>
+              <p>
+                A pesquisa de mercado foi o divisor de águas. Depois disso, parou de escalar produto e passou a <span className="text-foreground font-medium">liderar o marketshare dos que já tinha</span> — com margem saudável e previsibilidade.
+              </p>
+              <img
+                src={wppPatrick}
+                alt="Depoimento do Patrick no WhatsApp"
+                className="w-full rounded-xl mt-2 border border-border/30"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          {/* Luciano */}
+          <div className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="bg-gradient-gold text-primary-foreground text-xs font-heading font-bold px-3 py-1 rounded-full">
+                R$ 1 milhão em 45 dias
+              </span>
+              <span className="text-foreground font-heading font-bold">Luciano</span>
+            </div>
+            <div className="space-y-5 text-muted-foreground leading-relaxed">
+              <p>
+                O Luciano chegou com 500 caixas paradas, prazo de pagamento chegando e uma situação que poderia destruir o negócio.
+              </p>
+              <p>
+                Tinha apostado alto num produto sazonal. O mercado mudou, a margem apertou, a concorrência derrubou os preços — e ele não tinha visto nada disso acontecer.
+              </p>
+              <img
+                src={wppLuciano}
+                alt="Depoimento do Luciano no WhatsApp"
+                className="w-full rounded-xl mt-2 border border-border/30"
+                loading="lazy"
+              />
             </div>
           </div>
 
