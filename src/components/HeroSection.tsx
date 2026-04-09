@@ -7,14 +7,14 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-dark" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_hsl(45_100%_51%_/_0.06)_0%,_transparent_60%)]" />
 
-      <div className="relative z-10 max-w-3xl mx-auto text-center">
+      <div className="relative z-10 max-w-3xl mx-auto">
         {/* Logo */}
         <div className="mb-8 animate-fade-up">
           <div className="inline-block bg-white rounded-xl px-5 py-3 shadow-lg">
             <img
               src={logoPcav}
               alt="Mentoria PCAV"
-              className="h-14 md:h-20 mx-auto"
+              className="h-14 md:h-20"
             />
           </div>
         </div>
@@ -33,7 +33,7 @@ const HeroSection = () => {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: '0.35s' }}>
+        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed animate-fade-up" style={{ animationDelay: '0.35s' }}>
           A mentoria que transforma vendedores perdidos em donos do próprio negócio, com{" "}
           <span className="text-foreground font-medium">dados, estratégia e clareza</span> em cada decisão.
         </p>
