@@ -67,7 +67,7 @@ const PainSection = () => {
             {[
               { num: "01", text: "O produto não vende mais (saturou ou era hype)." },
               { num: "02", text: "As vendas caíram pra todo mundo, e não só pra você." },
-              { num: "03", text: "Alguém \"roubou\" suas vendas. E isso é o que MAIS acontece." },
+              { num: "03", text: "Alguém tomou o seu espaço no mercado e você nem percebeu. E isso é o que MAIS acontece." },
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-4">
                 <span className="text-primary font-heading font-bold text-sm shrink-0 mt-0.5">{item.num}</span>

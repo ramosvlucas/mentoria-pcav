@@ -109,7 +109,7 @@ const StorySection = () => {
           <CarouselContent>
             {stories.map((story, i) => (
               <CarouselItem key={i}>
-                <div className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card h-full">
+                <div className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card">
                   <p className="font-heading font-bold text-lg text-foreground mb-6">
                     {story.name}
                   </p>
