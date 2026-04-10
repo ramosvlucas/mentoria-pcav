@@ -42,7 +42,7 @@ const MethodSection = () => {
             <span className="text-gradient-gold">aplicar</span> na prática
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Aqui você aprende a pensar e analisar — não a copiar um passo a passo engessado.
+            Aqui você aprende a pensar e analisar, não a copiar um passo a passo engessado.
           </p>
         </div>
 

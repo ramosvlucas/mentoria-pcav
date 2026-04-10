@@ -42,7 +42,7 @@ const stories = [
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
           O Guilherme era CLT. Chegou sem saber o básico sobre o próprio
-          negócio — sem pesquisa, sem margem, sem entender os concorrentes.
+          negócio: sem pesquisa, sem margem, sem entender os concorrentes.
           Gastou dinheiro em cursos que entregaram teoria sem aplicação.
         </p>
         <p>Só quando começou a aplicar o método a ficha caiu.</p>
@@ -76,7 +76,7 @@ const stories = [
     content: (
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
-          O Luciano vendia há 2 anos — mas hoje sabe que era na base do
+          O Luciano vendia há 2 anos. Mas hoje sabe que era na base do
           feeling e da sorte. Apostou alto num estoque sazonal, o mercado
           mudou, a margem apertou. Ficou com mais de{" "}
           <span className="text-foreground font-medium">
@@ -95,7 +95,7 @@ const stories = [
     content: (
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
-          O Leonardo vendia no CPF — informal, desestruturado, sem margem
+          O Leonardo vendia no CPF, informal, desestruturado, sem margem
           real e sem visão de futuro. Chegou a ter produto apreendido
           nos Correios.
         </p>
@@ -120,7 +120,7 @@ const stories = [
         <p>
           O Éder começou em 2024 com um objetivo claro: ter o próprio
           negócio no Mercado Livre. No meio do caminho entendeu que
-          precisava de método — não achismo.
+          precisava de método, não de achismo.
         </p>
         <p>
           Em 2025 atingiu faturamento médio de{" "}
