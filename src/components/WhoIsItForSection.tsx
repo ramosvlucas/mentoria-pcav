@@ -17,7 +17,7 @@ const WhoIsItForSection = () => {
           <div className="space-y-4">
             {[
               "Não é pra quem ainda não vende no Mercado Livre.",
-              "Não é pra iniciantes (vendedores informais vendendo no CPF).",
+              "Não é pra quem ainda não tem empresa aberta (CNPJ).",
               "Não é pra quem quer aprender sobre Shopee, Amazon ou qualquer outra plataforma.",
               "E muito menos pra quem não tem dinheiro pra investir no próprio negócio.",
             ].map((item, i) => (
