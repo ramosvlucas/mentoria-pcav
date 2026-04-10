@@ -10,7 +10,7 @@ const FooterSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
+            className="w-11 h-11 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors cursor-pointer"
           >
             <Instagram className="w-4 h-4" />
           </a>
@@ -19,7 +19,7 @@ const FooterSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="YouTube"
-            className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
+            className="w-11 h-11 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors cursor-pointer"
           >
             <Youtube className="w-4 h-4" />
           </a>
