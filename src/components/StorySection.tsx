@@ -1,34 +1,18 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-
-const WhatsAppBubble = ({
-  lines,
-  time,
-}: {
-  lines: string[];
-  time: string;
-}) => (
-  <div className="rounded-2xl rounded-tl-sm bg-[#1a2b1f] border border-[#2a3f2e] p-4 shadow-md w-full">
-    <div className="space-y-2">
-      {lines.map((line, i) => (
-        <p key={i} className="text-[#e9f5ec] text-sm leading-relaxed">
-          {line}
-        </p>
-      ))}
-    </div>
-    <div className="flex justify-end mt-2 gap-1 items-center">
-      <span className="text-[#8aab8e] text-xs">{time}</span>
-      <svg className="w-4 h-4 text-[#53bdeb]" viewBox="0 0 16 11" fill="currentColor">
-        <path d="M11.071.653a.45.45 0 0 0-.63 0L4.5 6.595 2.559 4.653a.45.45 0 0 0-.63.63l2.256 2.256a.45.45 0 0 0 .63 0l6.256-6.256a.45.45 0 0 0 0-.63zm1.415 0a.45.45 0 0 0-.63 0L5.914 7.095l-.315-.315a.45.45 0 0 0-.63.63l.63.63a.45.45 0 0 0 .63 0L12.486 1.283a.45.45 0 0 0 0-.63z"/>
-      </svg>
-    </div>
-  </div>
-);
+import imgGiselle from "@/assets/whatsapp-giselle.jpg";
+import imgGuilherme from "@/assets/whatsapp-guilherme.jpg";
+import imgPatrick from "@/assets/whatsapp-patrick.png";
+import imgLuciano from "@/assets/whatsapp-luciano.png";
+import imgLeonardo from "@/assets/whatsapp-leonardo.png";
+import imgEder from "@/assets/whatsapp-eder.jpg";
 
 const stories = [
   {
     name: "Giselle",
     badge: "Saiu do CLT",
+    image: imgGiselle,
+    imageAlt: "Print de WhatsApp da Giselle",
     content: (
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
@@ -42,13 +26,6 @@ const stories = [
           </span>{" "}
           e muito menos sabia que existiam dados a serem analisados.
         </p>
-        <WhatsAppBubble
-          lines={[
-            "Hello! Adivinha quem tomou vergonha na cara e foi pesquisar seus concorrentes?",
-            "Estratégia, direção e ação. Foi isso que mudou tudo.",
-          ]}
-          time="10:42"
-        />
         <p className="text-foreground font-medium">
           Se livrou do CLT. Hoje tem liberdade, mais qualidade de vida
           e tempo pra desenvolver o próprio negócio.
@@ -59,6 +36,8 @@ const stories = [
   {
     name: "Guilherme",
     badge: "Medalha Platinum",
+    image: imgGuilherme,
+    imageAlt: "Print de WhatsApp do Guilherme",
     content: (
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
@@ -67,13 +46,6 @@ const stories = [
           Gastou dinheiro em cursos que entregaram teoria sem aplicação.
         </p>
         <p>Só quando começou a aplicar o método a ficha caiu.</p>
-        <WhatsAppBubble
-          lines={[
-            "Kkkkk já abriu a mente demais...",
-            "80% do resultado vem da pesquisa e 20% da ação.",
-          ]}
-          time="14:17"
-        />
         <p className="text-foreground font-medium">
           Em menos de 10 meses, saiu do zero e conquistou a medalha Platinum.
         </p>
@@ -83,6 +55,8 @@ const stories = [
   {
     name: "Patrick",
     badge: "Marketshare dominado",
+    image: imgPatrick,
+    imageAlt: "Print de WhatsApp do Patrick",
     content: (
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
@@ -91,19 +65,14 @@ const stories = [
           o anúncio, não conseguia previsibilidade.
         </p>
         <p>A pesquisa de mercado foi o divisor de águas.</p>
-        <WhatsAppBubble
-          lines={[
-            "Meu maior resultado foi a constância de faturamento com margens saudáveis sem a necessidade de escalar com mais produtos, mas sim liderar o marketshare dos produtos que já tenho.",
-            "Eu diria pra quem tem dúvida se entra na mentoria: é se de fato quer tratar seu negócio como um negócio de longo prazo ou um pinga pinga eterno.",
-          ]}
-          time="12:52"
-        />
       </div>
     ),
   },
   {
     name: "Luciano",
     badge: "R$ 1M em 45 dias",
+    image: imgLuciano,
+    imageAlt: "Print de WhatsApp do Luciano",
     content: (
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
@@ -115,19 +84,14 @@ const stories = [
           </span>{" "}
           e o prazo de pagamento chegando.
         </p>
-        <WhatsAppBubble
-          lines={[
-            "Em cerca de 45 dias, consegui vender mais de R$ 1 milhão, pagar os fornecedores e ainda sair com lucro.",
-            "O principal foi ter aprendido a interpretar os dados e tomar decisões com mais segurança. O Lucas não simplesmente me disse o que fazer. Ele me fez entender o porquê de cada decisão.",
-          ]}
-          time="11:17"
-        />
       </div>
     ),
   },
   {
     name: "Leonardo",
     badge: "Do CPF a 50k/mês em 3 meses",
+    image: imgLeonardo,
+    imageAlt: "Print de WhatsApp do Leonardo",
     content: (
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
@@ -143,19 +107,14 @@ const stories = [
           </span>
           . De informal a empreendedor de verdade.
         </p>
-        <WhatsAppBubble
-          lines={[
-            "Ver o meu patrimônio crescer na linha final do meu fluxo de caixa me faz sentir que estou progredindo de verdade.",
-            "Confiar no trabalho do Lucas foi um grande acerto que tive durante a minha jornada de empreendedorismo.",
-          ]}
-          time="15:51"
-        />
       </div>
     ),
   },
   {
     name: "Éder",
     badge: "Platinum • 300k/mês",
+    image: imgEder,
+    imageAlt: "Print de WhatsApp do Éder",
     content: (
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
@@ -170,13 +129,6 @@ const stories = [
           </span>
           . Em 2026 a mentoria ainda continua.
         </p>
-        <WhatsAppBubble
-          lines={[
-            "Mano batemos platinum aqui essa semana.",
-            "Meta agora é 300k mês.",
-          ]}
-          time="16:05"
-        />
       </div>
     ),
   },
@@ -214,7 +166,16 @@ const StorySection = () => {
                 </span>
               )}
             </div>
+
             {stories[current].content}
+
+            <div className="mt-6">
+              <img
+                src={stories[current].image}
+                alt={stories[current].imageAlt}
+                className="w-full rounded-xl border border-border/40 shadow-md"
+              />
+            </div>
           </div>
 
           {/* Navegação — oculta no mobile, visível a partir de md */}
