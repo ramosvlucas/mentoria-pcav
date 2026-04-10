@@ -7,6 +7,7 @@ import imgLuciano from "@/assets/whatsapp-luciano.png";
 import imgLeonardo from "@/assets/whatsapp-leonardo.png";
 import imgEder from "@/assets/whatsapp-eder.png";
 import imgJaque from "@/assets/whatsapp-jaque.png";
+import imgAmanda from "@/assets/whatsapp-amanda.png";
 
 const stories = [
   {
@@ -107,6 +108,30 @@ const stories = [
             Full ativo, empresa aberta e 50k por mês
           </span>
           . De informal a empreendedor de verdade.
+        </p>
+      </div>
+    ),
+  },
+  {
+    name: "Amanda",
+    badge: "Clareza e confiança",
+    image: imgAmanda,
+    imageAlt: "Print de depoimento da Amanda",
+    content: (
+      <div className="space-y-5 text-muted-foreground leading-relaxed">
+        <p>
+          A Amanda entrou na mentoria querendo crescer no Mercado Livre, mas ainda tomava decisões no achismo,
+          sem entender os números e sem saber como o mercado funcionava de verdade.
+        </p>
+        <p>
+          Depois que começou a aplicar o método, passou a{" "}
+          <span className="text-foreground font-medium">
+            enxergar o mercado de forma mais estratégica
+          </span>{" "}
+          e a tomar decisões com segurança.
+        </p>
+        <p className="text-foreground font-medium">
+          "Sinto uma diferença enorme na minha forma de pensar e agir. Tenho muito mais confiança no que estou fazendo."
         </p>
       </div>
     ),
