@@ -13,13 +13,13 @@ const WhoIsItForSection = () => {
 
         {/* NOT for */}
         <div className="bg-gradient-card border border-destructive/20 rounded-2xl p-8 shadow-card mb-6">
-          <h3 className="font-heading font-bold text-lg mb-6 text-destructive">Pode fechar essa página se...</h3>
+          <h3 className="font-heading font-bold text-lg mb-6 text-destructive">O Método PCAV não é pra todo mundo!</h3>
           <div className="space-y-4">
             {[
-              "Ainda não vende no Mercado Livre ou está começando agora.",
-              "Não tem medalha no Mercado Livre (seja vendendo no CPF ou CNPJ).",
-              "Quer aprender sobre Shopee, Amazon ou qualquer outra plataforma.",
-              "Não tem dinheiro pra investir no próprio negócio.",
+              "Não é pra quem ainda não vende no Mercado Livre.",
+              "Não é pra iniciantes (vendedores informais vendendo no CPF).",
+              "Não é pra quem quer aprender sobre Shopee, Amazon ou qualquer outra plataforma.",
+              "E muito menos pra quem não tem dinheiro pra investir no próprio negócio.",
             ].map((item, i) => (
               <div key={i} className="flex items-start gap-3">
                 <X className="w-5 h-5 text-destructive shrink-0 mt-0.5" />
