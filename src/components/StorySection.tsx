@@ -5,7 +5,7 @@ import imgGuilherme from "@/assets/whatsapp-guilherme.jpg";
 import imgPatrick from "@/assets/whatsapp-patrick.png";
 import imgLuciano from "@/assets/whatsapp-luciano.png";
 import imgLeonardo from "@/assets/whatsapp-leonardo.png";
-import imgEder from "@/assets/whatsapp-eder.jpg";
+import imgEder from "@/assets/whatsapp-eder.png";
 
 const stories = [
   {
