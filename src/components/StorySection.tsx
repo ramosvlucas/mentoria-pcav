@@ -6,6 +6,7 @@ import imgPatrick from "@/assets/whatsapp-patrick.png";
 import imgLuciano from "@/assets/whatsapp-luciano.png";
 import imgLeonardo from "@/assets/whatsapp-leonardo.png";
 import imgEder from "@/assets/whatsapp-eder.png";
+import imgJaque from "@/assets/whatsapp-jaque.png";
 
 const stories = [
   {
@@ -106,6 +107,30 @@ const stories = [
             Full ativo, empresa aberta e 50k por mês
           </span>
           . De informal a empreendedor de verdade.
+        </p>
+      </div>
+    ),
+  },
+  {
+    name: "Jaqueline",
+    badge: "Mentoria individual",
+    image: imgJaque,
+    imageAlt: "Print de depoimento da Jaqueline",
+    content: (
+      <div className="space-y-5 text-muted-foreground leading-relaxed">
+        <p>
+          A Jaque já tinha passado por outras mentorias. Mas sempre em grupos lotados,
+          sem suporte direto e sem o mentor presente.
+        </p>
+        <p>
+          Na mentoria PCAV foi diferente: aprendeu a pesquisar mercado, a ter um{" "}
+          <span className="text-foreground font-medium">
+            olhar cirúrgico na escolha dos produtos
+          </span>{" "}
+          e a entender como o algoritmo funciona na prática.
+        </p>
+        <p className="text-foreground font-medium">
+          "Você é muito mais que um mentor. É o cara fora do comum em conhecimento e empatia."
         </p>
       </div>
     ),
