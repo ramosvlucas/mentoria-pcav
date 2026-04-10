@@ -1,5 +1,4 @@
 import logoPcav from "@/assets/logo-pcav.png";
-import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
@@ -41,14 +40,6 @@ const HeroSection = () => {
           <span className="text-foreground font-medium">dados, estratégia e clareza</span> em cada decisão.
         </p>
 
-        {/* CTA */}
-        <div className="mt-10 animate-fade-up" style={{ animationDelay: '0.5s' }}>
-          <a href="https://typebot.co/olucasvilaronga-metodo-pcav" target="_blank" rel="noopener noreferrer">
-            <Button variant="cta" size="lg" className="h-14 px-10 rounded-full text-lg">
-              Quero ver se tenho perfil
-            </Button>
-          </a>
-        </div>
       </div>
     </section>
   );
