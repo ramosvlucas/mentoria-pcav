@@ -14,7 +14,9 @@ const HeroSection = () => {
             <img
               src={logoPcav}
               alt="Mentoria PCAV"
-              className="h-14 md:h-20"
+              className="h-14 md:h-20 w-auto"
+              width={160}
+              height={80}
             />
           </div>
         </div>

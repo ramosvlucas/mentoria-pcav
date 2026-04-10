@@ -217,32 +217,34 @@ const StorySection = () => {
             {stories[current].content}
           </div>
 
-          {/* Navegação */}
+          {/* Navegação — oculta no mobile, visível a partir de md */}
           <button
             onClick={prev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 w-9 h-9 rounded-full border border-border bg-card flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
-            aria-label="Anterior"
+            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 w-11 h-11 rounded-full border border-border bg-card items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors cursor-pointer touch-action-manipulation focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            aria-label="Depoimento anterior"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
           <button
             onClick={next}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 w-9 h-9 rounded-full border border-border bg-card flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors"
-            aria-label="Próximo"
+            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 w-11 h-11 rounded-full border border-border bg-card items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/40 transition-colors cursor-pointer touch-action-manipulation focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            aria-label="Próximo depoimento"
           >
             <ChevronRight className="w-4 h-4" />
           </button>
         </div>
 
         {/* Indicadores */}
-        <div className="flex justify-center gap-2 mt-6">
+        <div className="flex justify-center gap-1 mt-6">
           {stories.map((_, i) => (
             <button
               key={i}
               onClick={() => setCurrent(i)}
-              className={`w-1.5 h-1.5 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-border"}`}
+              className="p-2 cursor-pointer touch-action-manipulation focus-visible:outline-none"
               aria-label={`Ir para depoimento ${i + 1}`}
-            />
+            >
+              <span className={`block w-1.5 h-1.5 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-border"}`} />
+            </button>
           ))}
         </div>
       </div>

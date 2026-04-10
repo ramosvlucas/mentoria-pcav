@@ -51,7 +51,7 @@ const MethodSection = () => {
           {steps.map((step, i) => (
             <div
               key={i}
-              className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card group hover:border-primary/30 transition-all duration-300 flex flex-col gap-4"
+              className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card group hover:border-primary/30 transition-all duration-300 motion-reduce:transition-none flex flex-col gap-4"
             >
               <div className="flex items-center gap-4">
                 <span className="text-5xl md:text-6xl font-heading font-bold text-gradient-gold opacity-50">

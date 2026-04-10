@@ -8,7 +8,7 @@ import CTASection from "@/components/CTASection";
 import FooterSection from "@/components/FooterSection";
 
 const Index = () => (
-  <main className="min-h-screen">
+  <main className="min-h-dvh">
     <HeroSection />
     <PainSection />
     <StorySection />
