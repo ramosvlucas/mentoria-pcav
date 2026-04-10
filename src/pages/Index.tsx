@@ -11,9 +11,9 @@ const Index = () => (
   <main className="min-h-dvh">
     <HeroSection />
     <PainSection />
+    <WhoIsItForSection />
     <StorySection />
     <MethodSection />
-    <WhoIsItForSection />
     <DifferentialsSection />
     <CTASection />
     <FooterSection />

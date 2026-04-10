@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import imgGiselle from "@/assets/whatsapp-giselle.jpg";
 import imgGuilherme from "@/assets/whatsapp-guilherme.jpg";
 import imgPatrick from "@/assets/whatsapp-patrick.png";
@@ -207,6 +208,15 @@ const StorySection = () => {
               <span className={`block w-1.5 h-1.5 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-border"}`} />
             </button>
           ))}
+        </div>
+
+        {/* CTA após depoimentos */}
+        <div className="mt-10 text-center">
+          <a href="https://typebot.co/olucasvilaronga-metodo-pcav" target="_blank" rel="noopener noreferrer">
+            <Button variant="cta" size="lg" className="h-14 px-10 rounded-full text-lg">
+              Quero ver se tenho perfil
+            </Button>
+          </a>
         </div>
       </div>
     </section>
