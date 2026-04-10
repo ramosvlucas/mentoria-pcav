@@ -20,7 +20,7 @@ const PainSection = () => {
           E não, a culpa não é do algoritmo.
         </p>
         <p className="text-xl font-bold text-foreground mb-8 leading-snug">
-          O problema é que você não sabe analisar dados.
+          O problema é que você ainda não aprendeu a analisar dados.
         </p>
 
         <p className="border-l-2 border-primary pl-6 py-2 mt-10 mb-6 text-foreground font-medium italic text-lg">
