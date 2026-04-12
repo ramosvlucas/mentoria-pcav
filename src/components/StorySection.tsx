@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import imgGiselle from "@/assets/whatsapp-giselle.jpg";
-import imgGuilherme from "@/assets/whatsapp-guilherme.jpg";
+import imgGiselle from "@/assets/whatsapp-giselle.png";
 import imgPatrick from "@/assets/whatsapp-patrick.png";
 import imgLuciano from "@/assets/whatsapp-luciano.png";
 import imgLeonardo from "@/assets/whatsapp-leonardo.png";
@@ -18,38 +17,19 @@ const stories = [
     content: (
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
-          A Giselle chegou na mentoria ainda presa no CLT. Tinha um produto
-          bom, mas as vendas despencaram e ela não sabia o porquê.
+          A Giselle chegou na mentoria sem noção de DRE, sem entender seus ganhos
+          e sem saber analisar os próprios anúncios.
         </p>
         <p>
-          Na primeira conversa ficou claro: ela{" "}
+          Com o método aprendeu a importância da{" "}
           <span className="text-foreground font-medium">
-            não fazia pesquisa de mercado
+            pesquisa de mercado
           </span>{" "}
-          e muito menos sabia que existiam dados a serem analisados.
+          e passou a aumentar o portfólio com assertividade.
         </p>
         <p className="text-foreground font-medium">
-          Se livrou do CLT. Hoje tem liberdade, mais qualidade de vida
-          e tempo pra desenvolver o próprio negócio.
-        </p>
-      </div>
-    ),
-  },
-  {
-    name: "Guilherme",
-    badge: "Medalha Platinum",
-    image: imgGuilherme,
-    imageAlt: "Print de WhatsApp do Guilherme",
-    content: (
-      <div className="space-y-5 text-muted-foreground leading-relaxed">
-        <p>
-          O Guilherme era CLT. Chegou sem saber o básico sobre o próprio
-          negócio: sem pesquisa, sem margem, sem entender os concorrentes.
-          Gastou dinheiro em cursos que entregaram teoria sem aplicação.
-        </p>
-        <p>Só quando começou a aplicar o método a ficha caiu.</p>
-        <p className="text-foreground font-medium">
-          Em menos de 10 meses, saiu do zero e conquistou a medalha Platinum.
+          Saiu do CLT. Hoje tem a própria renda, a própria carreira e ainda
+          viveu uma gestação mais tranquila com presença de verdade.
         </p>
       </div>
     ),
