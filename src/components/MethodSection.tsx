@@ -1,71 +1,74 @@
-import { Search, Package, Monitor, Banknote } from "lucide-react";
-
 const steps = [
   {
-    icon: Search,
-    number: "01",
     letter: "P",
     title: "Pesquise",
-    description: "Descubra quem domina o mercado, entenda o cenário e identifique oportunidades reais antes de agir.",
+    description:
+      "Entenda o que é demanda de verdade. Aprenda a encontrar produtos com potencial, analisar grupos de anúncios, mapear concorrentes e identificar mudanças de mercado antes que elas te peguem de surpresa.",
   },
   {
-    icon: Package,
-    number: "02",
     letter: "C",
     title: "Compre",
-    description: "Compre com inteligência. Saiba exatamente o que comprar, quanto comprar e quando comprar com base em dados.",
+    description:
+      "Aprenda a negociar com fornecedores, calcular margem e definir o volume certo de compra. Cada decisão com número na mão, não no feeling.",
   },
   {
-    icon: Monitor,
-    number: "03",
     letter: "A",
     title: "Anuncie",
-    description: "Monte anúncios que convertem. Posicione seu produto com estratégia, preço e copy que fazem diferença.",
+    description:
+      "Monte um anúncio de alta conversão do zero. Título, fotos, clips e ficha técnica estruturados pra vender sem você precisar ser o mais barato.",
   },
   {
-    icon: Banknote,
-    number: "04",
     letter: "V",
     title: "Venda",
-    description: "Execute com clareza. Quem tem dados na mão não hesita: age com confiança e vende com margem.",
+    description:
+      "Opere com estratégia. Metas, logística, ranqueamento e publicidade alinhados com o controle financeiro pra você crescer com consistência.",
   },
 ];
 
 const MethodSection = () => {
   return (
-    <section className="py-24 md:py-32 px-6 bg-secondary/30">
+    <section className="py-16 md:py-20 px-6">
       <div className="max-w-3xl mx-auto">
+
         <div className="mb-12">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mb-6 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-heading font-semibold mb-5 leading-[1.1] tracking-[-0.02em]">
             O que você vai{" "}
-            <span className="line-through text-muted-foreground decoration-muted-foreground/50">aprender</span>{" "}
-            <span className="text-gradient-gold">aplicar</span> na prática
+            <span className="line-through text-foreground/40 decoration-foreground/40">aprender</span>{" "}
+            <span className="text-primary">aplicar</span> na prática
           </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Aqui você aprende a pensar e analisar, não a copiar um passo a passo engessado.
+          <p className="text-lg text-foreground leading-relaxed">
+            Eu não te entrego um passo a passo engessado. Eu te ensino a forma correta de analisar, pensar e decidir.
           </p>
         </div>
 
-        {/* Steps */}
-        <div className="space-y-6">
+        <div className="flex flex-col divide-y divide-line">
           {steps.map((step, i) => (
-            <div
-              key={i}
-              className="bg-gradient-card border border-border rounded-2xl p-8 md:p-10 shadow-card group hover:border-primary/30 transition-all duration-300 motion-reduce:transition-none flex flex-col gap-4"
+            <article
+              key={step.letter}
+              className="flex items-center gap-7 py-8 group"
             >
-              <div className="flex items-center gap-4">
-                <span className="text-5xl md:text-6xl font-heading font-bold text-gradient-gold opacity-50">
-                  {step.letter}
-                </span>
-                <div className="flex items-center gap-3">
-                  <step.icon className="w-6 h-6 text-primary" />
-                  <h3 className="font-heading font-bold text-xl md:text-2xl">{step.title}</h3>
-                </div>
+              {/* Letra: P amarelo, C/A/V branco */}
+              <span
+                className={`font-heading font-semibold leading-none shrink-0 select-none ${step.letter === "P" ? "text-primary" : "text-foreground"}`}
+                style={{ fontSize: "clamp(52px, 10vw, 76px)" }}
+                aria-hidden
+              >
+                {step.letter}
+              </span>
+
+              {/* Conteúdo */}
+              <div className="flex-1">
+                <h3 className="font-heading font-semibold text-lg tracking-tight text-foreground mb-1">
+                  {step.title}
+                </h3>
+                <p className="text-foreground leading-relaxed text-lg">
+                  {step.description}
+                </p>
               </div>
-              <p className="text-muted-foreground leading-relaxed">{step.description}</p>
-            </div>
+            </article>
           ))}
         </div>
+
       </div>
     </section>
   );

@@ -15,12 +15,18 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        cta: "bg-gradient-gold text-primary-foreground font-heading font-bold text-lg tracking-wide hover:opacity-90 animate-pulse-glow motion-reduce:animate-none transition-all duration-300",
+        /* XP-style: amarelo sólido, pill, sem gradiente, sem glow */
+        pill: "bg-primary text-primary-foreground font-semibold tracking-tight hover:bg-[#fdd23a] rounded-pill transition-colors",
+        /* Secundário texto-fantasma com seta */
+        ghostLink: "text-foreground/80 hover:text-foreground font-medium tracking-tight",
+        /* legado — mantido para compat, mas sem glow */
+        cta: "bg-primary text-primary-foreground font-semibold tracking-tight hover:bg-[#fdd23a] rounded-pill transition-colors",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        lg: "h-12 px-7 text-base",
+        xl: "h-14 px-9 text-base",
         icon: "h-10 w-10",
       },
     },
